@@ -228,6 +228,9 @@ Pooch has been designed to be extended, so you can write your own downloaders
 and post-processors to provide solutions to particular cases that aren't
 covered by the built-in tools.
 
+Include:
+- link to documentation and github repo
+- link to PyCascades talk (https://www.youtube.com/watch?v=KvxBc4xUMyg)
 
 [santisoler]: https://www.santisoler.com
 [metpy]: https://unidata.github.io/MetPy
