@@ -244,6 +244,22 @@ Maintainers needing a way to provide sample datasets.
 Easy way to download and cache data files in Python.
 -->
 
+Scientific Python libraries usually need to provide some sample datasets to run
+in their examples and tutorials, which allow their users to get more familiar
+with the tools.
+Shipping these datasets along with the software is cumbersome, and make the
+packages larger than needed: those data files are not critical for running the
+software.
+Alternatively, they could be hosted in a different location, what
+introduces the need for an easy way to access them.
+
+[Pooch][pooch] is a slim pure-Python library that provides a simple way to
+download files, cache them locally while checking their integrity through
+checksums.
+Part of the [Fatiando a Terra][fatiando] project, it was specifically designed
+to tackle this particular task that many scientific libraries face, although it
+ships with extra features that makes it useful in many other scenarios.
+
 <!--
 Methods?
 
@@ -251,11 +267,88 @@ What Pooch can do?
 Maybe don't get into too many details and just mention the capabilities.
 -->
 
+It can be used to download a single file from the web through the
+`pooch.retrieve()` function, which takes the URL of the desired file, and
+optionally its checksum hash.
+When called, it will download the file, checks its integrity, cache it in
+the desired location -which by default is the cache folder of the OS-, and
+return the path to the file.
+After the file is cached, any future call to this function won't re-download
+the file, but provide the same path to the existing file.
+
+[Pooch][pooch] supports downloading files from different protocols, like HTTP
+and FTP.
+It can also download files from repositories like
+[Zenodo][zenodo], [figshare][figshare] and [dataverse][dataverse] directly
+through their [DOI (Digital object identifier)][doi].
+
+Pooch offers some built-in post-processors, which are _callable_ objects that
+can perform tasks after the files have been downloaded. For example, unpacking
+or decompressing zip archives or compressed files and returning a list
+the contained files.
+For example, we can use the `pooch.retrieve()` function to download
+a `store.zip` file from [Zenodo][zenodo] through the DOI of the repository in
+which it lives, and unpack its files using the `pooch.Unzip()` post-processor:
+
+```python
+fnames = pooch.retrieve(
+    url="doi:10.5281/zenodo.4924874/store.zip",
+    known_hash="md5:7008231125631739b64720d1526619ae",
+    processor=pooch.Unzip(),
+)
+```
+
+When managing the download of several data files, we should make use of the
+`pooch.Pooch` object, which can keep a record of the available files for
+download through a _registry_.
+This is particularly useful for package maintainers that want to provide an
+easy way to download sample datasets.
+
+For example, we can store some data files inside a `data` folder, in the same
+GitHub repository where we store our source code. With `pooch.create()` we can
+initialize a `pooch.Pooch` object that will allow us to download these data
+files:
+
+```python
+from . import version  # the version string of your project
+
+PUPPY = pooch.create(
+    path=pooch.os_cache("mypackage"),  # where data files will be downloaded to
+    base_url="https://github.com/me/mypackage/raw/{version}/data/",
+    version=version,
+    registry={
+        "temperature.csv": "sha256:19uheidhlkjdwhoiwuhc0uhcwljchw9ochwochw89dcgw9dcgwc",
+        "pressure.csv": "sha256:1upodh2ioduhw9celdjhlfvhksgdwikdgcowjhcwoduchowjg8w",
+    }
+)
+```
+
+Then we can define some public functions that will allow our users to _fetch_
+those data files:
+
+```python
+import pandas as pd
+
+def fetch_temperature_data():
+    """Load sample temperature data."""
+    fname = PUPPY.fetch("temperature.csv")
+    return pd.read_csv(fname)
+
+def fetch_pressure_data():
+    """Load sample pressure data."""
+    fname = PUPPY.fetch("pressure.csv")
+    return pd.read_csv(fname)
+```
+
 <!--
 Results ?
 
 Maybe showing who's using it, and positives experiences while teaching.
 -->
+
+Python libraries like [SciPy][scipy], [scikit-image][scikit-image],
+[napari][napari] and [MetPy][metpy] are currently using Pooch for managing the
+download of their sample data files.
 
 <!--
 Conclusions
@@ -266,8 +359,13 @@ Conclude with just some final thoughts
 
 
 [santisoler]: https://www.santisoler.com
+[fatiando]: https://www.fatiando.org
+[pooch]: https://www.fatiando.org/pooch
 [metpy]: https://unidata.github.io/MetPy
 [napari]: https://napari.org
 [scipy]: https://scipy.org
 [scikit-image]: https://scikit-image.org
-
+[doi]: https://en.wikipedia.org/wiki/Digital_object_identifier
+[zenodo]: https://zenodo.org/
+[figshare]: https://figshare.com/
+[dataverse]: https://dataverse.org/
