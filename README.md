@@ -119,6 +119,8 @@ Links:
 
 -->
 
+### v1
+
 Pooch is a slim pure-Python library for downloading files from the web, caching
 them locally and checking their integrity.
 It can be used to download a single file from the web when needed, or to
@@ -231,6 +233,37 @@ covered by the built-in tools.
 Include:
 - link to documentation and github repo
 - link to PyCascades talk (https://www.youtube.com/watch?v=KvxBc4xUMyg)
+
+### v2
+
+<!--
+Motivation
+
+Why Pooch?
+Maintainers needing a way to provide sample datasets.
+Easy way to download and cache data files in Python.
+-->
+
+<!--
+Methods?
+
+What Pooch can do?
+Maybe don't get into too many details and just mention the capabilities.
+-->
+
+<!--
+Results ?
+
+Maybe showing who's using it, and positives experiences while teaching.
+-->
+
+<!--
+Conclusions
+
+Conclude with just some final thoughts
+-->
+
+
 
 [santisoler]: https://www.santisoler.com
 [metpy]: https://unidata.github.io/MetPy
