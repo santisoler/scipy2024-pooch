@@ -58,11 +58,11 @@ datasets for their gallery examples and tutorials.
 
 ### v2
 
-Pooch is a Python library that can easily download and locally cache files from
+Pooch is a Python library that can download and locally cache files from
 the web without any hassle. Novices can use it to simply download files
 in one line of code and focus on the data.
 While package maintainers can use it to provide sample datasets
-to their users, on examples and tutorials, as libraries like [SciPy][scipy],
+to their users, in examples and tutorials, as libraries like [SciPy][scipy],
 [scikit-image][scikit-image], [napari][napari] and [MetPy][metpy] do.
 During this talk we'll show you how you can use the different features that
 Pooch offers and also how you can extend its capabilities by writing your own
