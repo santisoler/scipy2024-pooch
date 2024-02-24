@@ -53,6 +53,7 @@ During this talk we'll show you how you can use the different features that
 Pooch offers and also how you can extend its capabilities by writing your own
 downloaders or post-processors.
 
+![Pooch logo](_assets/image.png)
 
 
 ## Description
