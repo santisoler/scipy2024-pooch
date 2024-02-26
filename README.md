@@ -135,22 +135,22 @@ their sample datasets available to their users, while also providing extra
 features that makes it useful in may other scenarios.
 
 
-With the `pooch.retrieve()` function we can download a file from the web, check
-its integrity through its checksum, cache it locally in the desired location,
-and finally get the path to that file.
+With the [`pooch.retrieve()`][pooch.retrieve] function we can download a file
+from the web, check its integrity through its checksum, cache it locally in the
+desired location, and finally get the path to that file.
 If the file has already been downloaded, the function will avoid re-downloading
 and simply return its path.
 
 In the need of managing the download of multiple data files, we make use of the
-`pooch.Pooch` object, which can keep a record of the available files for
-download through a _registry_: a dictionary with all remote files and their
-hashes.
+[`pooch.Pooch`][pooch.Pooch] object, which can keep a record of the available
+files for download through a _registry_: a dictionary with all remote files and
+their hashes.
 Then these files can easily be downloaded and cached through the
-`Pooch.fetch()` method.
-The `pooch.Pooch` object is particularly useful for package maintainers that
-want to provide an easy way to download sample datasets for their libraries,
-supporting ways to easily manage different data files for the different
-versions of the package.
+[`Pooch.fetch()`][Pooch.fetch] method.
+The [`pooch.Pooch`][pooch.Pooch] object is particularly useful for package
+maintainers that want to provide an easy way to download sample datasets for
+their libraries, supporting ways to easily manage different data files for the
+different versions of the package.
 
 [Pooch][pooch] supports downloading files from different protocols, like HTTP
 and FTP.
@@ -195,6 +195,9 @@ downloaders or post-processors.
 [santisoler]: https://www.santisoler.com
 [fatiando]: https://www.fatiando.org
 [pooch]: https://www.fatiando.org/pooch
+[pooch.retrieve]: https://www.fatiando.org/pooch/v1.8.1/api/generated/pooch.retrieve.html
+[pooch.pooch]: https://www.fatiando.org/pooch/v1.8.1/api/generated/pooch.Pooch.html
+[pooch.fetch]: https://www.fatiando.org/pooch/v1.8.1/api/generated/pooch.Pooch.html#pooch.Pooch.fetch
 [metpy]: https://unidata.github.io/MetPy
 [napari]: https://napari.org
 [scipy]: https://scipy.org
