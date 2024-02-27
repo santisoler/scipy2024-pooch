@@ -125,14 +125,14 @@ These datasets should be readily available to the users, so they can focus on
 learning and not micromanaging file downloads.
 Shipping these data files along with the software is cumbersome, and make the
 packages larger than needed.
-Alternatively, they could be hosted in a different location, what
+Alternatively, they could be hosted in a different location, which
 introduces the need for an easy way to access them.
 
-[Pooch][pooch] is a slim pure-Python library that allows to download and
+[Pooch][pooch] is a slim pure-Python library that allows you to download and
 cache files from the web.
-It was specifically designed to provide package managers an easy way to make
+It was specifically designed to provide package developers an easy way to make
 their sample datasets available to their users, while also providing extra
-features that makes it useful in may other scenarios.
+features that makes it useful in many other scenarios.
 
 
 With the [`pooch.retrieve()`][pooch.retrieve] function we can download a file
@@ -142,17 +142,17 @@ If the file has already been downloaded, the function will avoid re-downloading
 and simply return its path.
 
 In the need of managing the download of multiple data files, we make use of the
-[`pooch.Pooch`][pooch.Pooch] object, which can keep a record of the available
+[`pooch.Pooch`][pooch.Pooch] class, which can keep a record of the available
 files for download through a _registry_: a dictionary with all remote files and
 their hashes.
 Then these files can easily be downloaded and cached through the
 [`Pooch.fetch()`][Pooch.fetch] method.
-The [`pooch.Pooch`][pooch.Pooch] object is particularly useful for package
+The [`Pooch`][pooch.Pooch] class is particularly useful for package
 maintainers that want to provide an easy way to download sample datasets for
-their libraries, supporting ways to easily manage different data files for the
-different versions of the package.
+their libraries, supporting ways to separate the cached data files for
+different versions of their packages.
 
-[Pooch][pooch] supports downloading files from different protocols, like HTTP
+[Pooch][pooch] supports downloading files using different protocols, like HTTP
 and FTP.
 It can also download files from repositories like
 [Zenodo][zenodo], [figshare][figshare] and [dataverse][dataverse] directly
@@ -160,10 +160,9 @@ through their [DOI (Digital object identifier)][doi].
 Its modular design allows us to plug our own downloaders, so we can make it
 work with other protocols or APIs.
 
-It also offers a simple way to perform post-download tasks through
-_post-processors_. It already includes built-in post-processor classes for
-unpacking and decompressing zip or compressed files and make `pooch.retrieve()`
-to return a list of the contained files.
+We also offer a simple way to perform post-download tasks through
+_post-processors_. Pooch already includes built-in post-processor classes for
+unpacking zip and tar archives and decompressing files.
 Users can also write their own post-processors and easily plug them into
 Pooch.
 
@@ -173,11 +172,9 @@ a community that develops open-source Python tools for geosciences.
 It started as a collaboration between [Fatiando a Terra][fatiando] and
 [MetPy][metpy] to standardize how sample datasets are downloaded for gallery
 examples and tutorials.
-
 It became popular among the scientific Python community, and nowadays its being
 used by projects like [SciPy][scipy], [scikit-image][scikit-image],
 [napari][napari] and [MNE Tools][mne-tools], among others.
-
 Pooch proved to be useful when running live-coding tutorials,
 allowing instructors and attendees to get their hands on the data without any
 frills, and also ensuring that they got the right data file.
