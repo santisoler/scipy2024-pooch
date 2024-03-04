@@ -130,7 +130,7 @@ introduces the need for an easy way to access them.
 
 [Pooch][pooch] is a slim, pure Python library that allows you to download and
 cache files from the web.
-It was specifically designed to provide package developers with an easy way to make
+It is specifically designed to provide package developers with an easy way to make
 their sample datasets available to their users, while also providing extra
 features that make it useful in many other scenarios.
 
