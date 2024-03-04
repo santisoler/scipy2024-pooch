@@ -157,7 +157,7 @@ and FTP.
 It can also download files from repositories like
 [Zenodo][zenodo], [figshare][figshare] and [dataverse][dataverse] directly
 through their [DOI (Digital object identifier)][doi].
-Its modular design allows us to plug in our own downloaders, so we can make it
+Its modular design allows us to plug in custom downloaders, so we can make it
 work with other protocols or APIs.
 
 We also offer a simple way to perform post-download tasks through
