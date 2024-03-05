@@ -118,11 +118,12 @@ Links:
 
 
 
-Most scientific Python libraries provide some sample datasets to use
-within their examples and tutorials, which help their users to get more
-familiar with the tools.
-These datasets should be readily available to the users so that they can focus on
-learning and not micromanaging file downloads.
+Tutorials and examples are among the most critical assets that scientific
+Python libraries have to drive the adoption of their tools by the community.
+They usually require some sample datasets to demonstrate the capabilities
+of their packages and to show how they can be used in comprehensive workflows.
+These datasets should be readily available to the users so that they can focus
+on learning and not micromanaging file downloads.
 Shipping these data files along with the software is cumbersome, and makes the
 packages larger than needed.
 Alternatively, they could be hosted in a different location, which
