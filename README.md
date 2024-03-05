@@ -131,8 +131,8 @@ introduces the need for an easy way to access them.
 
 [Pooch][pooch] is a slim, pure Python library that allows you to download and
 cache files from the web.
-It is specifically designed to provide package developers with an easy way to make
-their sample datasets available to their users, while also providing extra
+It is specifically designed to provide package developers with an easy way to
+make their sample datasets available to their users, while also providing extra
 features that make it useful in many other scenarios.
 
 
@@ -149,14 +149,14 @@ their hashes.
 Then these files can easily be downloaded and cached through the
 [`Pooch.fetch()`][Pooch.fetch] method.
 The [`Pooch`][pooch.Pooch] class is particularly useful for package
-maintainers that want to provide an easy way to download sample datasets for
+maintainers who want to provide an easy way to download sample datasets for
 their libraries, as it supports ways to separate the cached data files for
 different versions of their packages.
 
 [Pooch][pooch] supports downloading files using different protocols, like HTTP
 and FTP.
 It can also download files from repositories like
-[Zenodo][zenodo], [figshare][figshare] and [dataverse][dataverse] directly
+[Zenodo][zenodo], [figshare][figshare], and [dataverse][dataverse] directly
 through their [DOI (Digital object identifier)][doi].
 Its modular design allows us to plug in custom downloaders, so we can make it
 work with other protocols or APIs.
@@ -164,7 +164,7 @@ work with other protocols or APIs.
 We also offer a simple way to perform post-download tasks through
 _post-processors_. Pooch already includes built-in post-processor classes for
 unpacking zip and tar archives and decompressing files.
-Users can also write their own post-processors and easily plug them into
+Users can also write their custom post-processors and easily plug them into
 Pooch.
 
 
@@ -173,12 +173,12 @@ a community that develops open-source Python tools for geosciences.
 It started as a collaboration between [Fatiando a Terra][fatiando] and
 [MetPy][metpy] to standardize how sample datasets are downloaded for gallery
 examples and tutorials.
-It became popular among the scientific Python community, and nowadays it is being
-used by projects like [SciPy][scipy], [scikit-image][scikit-image],
+It became popular among the scientific Python community, and nowadays it is
+being used by projects like [SciPy][scipy], [scikit-image][scikit-image],
 [napari][napari] and [MNE Tools][mne-tools], among others.
-Pooch has proved to be useful when running live-coding tutorials,
-as it allows instructors and attendees to get their hands on the data without any
-frills, and also ensures that they have obtained the right data file.
+Pooch has proved to be useful when running live-coding tutorials, as it allows
+instructors and attendees to get their hands on the data without any frills,
+and also ensures that they have obtained the right data file.
 
 A peer-reviewed paper about Pooch was published in the [Journal of Open Source
 Software][joss] (doi: [10.21105/joss.01943][pooch-doi]), and presented in
@@ -186,8 +186,8 @@ a [lightning-talk][pycascades-pooch] at [PyCascades 2023][pycascades2023].
 
 
 During this talk, we'll show you how you can use the different features that
-Pooch offers and also discuss how you can extend its capabilities by writing your own
-downloaders or post-processors.
+Pooch offers and also discuss how you can extend its capabilities by writing
+your custom downloaders or post-processors.
 
 
 [santisoler]: https://www.santisoler.com
