@@ -158,13 +158,12 @@ and FTP.
 It can also download files from repositories like
 [Zenodo][zenodo], [figshare][figshare], and [dataverse][dataverse] directly
 through their [DOI (Digital object identifier)][doi].
-Its modular design allows us to plug in custom downloaders, so we can make it
-work with other protocols or APIs.
 It also offers a simple way to perform post-download tasks through
 _post-processors_. Pooch already includes built-in post-processor classes for
 unpacking zip and tar archives and decompressing files.
-Users can also write their custom post-processors and easily plug them into
-Pooch.
+Its modular design allows us to plug in custom downloaders, so we can make it
+work with other protocols or APIs, or custom post-processors, to carry out any
+required task after the files have been downloaded.
 
 
 Pooch was created as part of the [Fatiando a Terra][fatiando] project,
