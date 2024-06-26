@@ -11,41 +11,7 @@
 
 Read the [abstract][abstract] in [SciPy2024 schedule][schedule].
 
-<!--
-
-I can add an image in the submission.
-
-The submission can be done in Markdown!
-
--->
-
 ## Abstract
-
-<!--
-
-<= 100 words
-
-- In your abstract, be sure to include answers to some basic questions: Who is
-the intended audience for your talk? What, specifically, will attendees learn
-from your talk?
-
--->
-
-<!--
-### Brainstorming
-
-- Intended audience:
-  - package maintainers, teachers and instructors, end users.
-- What will they learn:
-  - Package maintainers can use Pooch to easily provide sample datasets in
-    gallery examples, tutorials, user guides, etc.
-  - Teachers can use Pooch to easily download data files during live coding
-    classes, locally or in the cloud, while ensuring that the students have the
-    correct file.
-
-What's Pooch? Who can use it? What's is useful for? Who's using it?
-
--->
 
 Pooch is a Python library that can download and locally cache files from
 the web without hassle. Novices can use it to simply download files
@@ -57,70 +23,11 @@ During this talk, we'll show you how you can use the different features that
 Pooch offers and also how you can extend its capabilities by writing your own
 downloaders or post-processors.
 
-![Pooch logo](_assets/image.png)
+![Abstract image. Showing Pooch logo along with the title of the talk and
+a link to Pooch's website: https://www.fatiando.org/pooch](_assets/image.png)
 
 
 ## Description
-
-<!--
-Your placement in the program will be based on reviews of your description.
-This should be a roughly 500-word outline of your presentation. This outline
-should concisely describe software of interest to the SciPy community, tools or
-techniques for more effective computing, or how scientific Python was applied
-to solve a research problem. A traditional background/motivation, methods,
-results, and conclusion structure is encouraged but not required. Links to
-project websites, source code repositories, figures, full papers, and evidence
-of public speaking ability are encouraged.
-
-
-Include links to source code, articles, blog posts, or other writing that adds
-context to the presentation.
-
-Review process:
-- Would you recommend accepting this proposal (yes/no)?
-- Proposal rating? (numerical score 1 to 5)
-- How confident are you in your review? (numerical score 1 to 5)
-- Does this abstract concisely describe software of interest to the SciPy
-  community, tools or techniques for more effective computing, or how
-  scientific Python was applied to solve a research problem? (numerical score
-  1 to 5)
-
-### Brainstorming
-
-- What's Pooch?
-- Download and cache files without frills: `retrieve`
-- Automatically check file integrity.
-- Reuse that cache file.
-- For package maintainers, create a `Pooch` object and `fetch` files from
-  anywhere.
-- Download from anywhere: FTP, Zenodo, figshare, dataverse, etc.
-- Unpack archives
-- Why it's useful? Why you should use it?
-- Extend it however you want: write your own downloaders and post-processors.
-- Who's using Pooch?
-
-Links:
-
-- github.com/fatiando/pooch
-- www.fatiando.org/pooch
-- https://doi.org/10.21105/joss.01943
-
-### Structure
-
-1. Motivation
-  - Why Pooch?
-  - Maintainers needing a way to provide sample datasets.
-  - Easy way to download and cache data files in Python.
-2. Methods
-  - What Pooch can do?
-  - Maybe don't get into too many details and just mention the capabilities.
-3. Results
-  - Mention who's using it, and positives experiences while teaching.
-4. Conclusion
-  - Conclude with just some final thoughts, summary of the talk.
--->
-
-
 
 Tutorials and examples are among the most critical assets that scientific
 Python libraries have to drive the adoption of their tools by the community.
