@@ -1,0 +1,13 @@
+name: scipy2024
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12.*
+  - pip
+  - pooch
+  - numpy
+  - pandas
+  - xarray
+  - matplotlib
+  - jupyter
+  - netcdf4
