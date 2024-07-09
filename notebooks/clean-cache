@@ -37,6 +37,5 @@ ask() {
 if ask "Are you sure you want to clean the cache?" Y; then
     rm -r ~/.cache/pooch
     rm -r ~/.cache/temperatures
-    rm -r ~/.cache/mypackage
     rm -r ~/.cache/ice-sheets
 fi
