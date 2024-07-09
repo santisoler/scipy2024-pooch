@@ -12,3 +12,4 @@ dependencies:
   - jupyter
   - netcdf4
   - tqdm
+  - pygmt
