@@ -120,3 +120,13 @@ your custom downloaders or post-processors.
 [pycascades-pooch]: https://www.youtube.com/watch?v=KvxBc4xUMyg
 [abstract]: https://cfp.scipy.org/2024/talk/AWFAQF
 [schedule]: https://cfp.scipy.org/2024/schedule
+
+## License
+
+The abstract and the slides are distributed under a
+[Creative Commons Attribution 4.0 International License][cc-by].
+
+[![CC BY 4.0][cc-by-image]][cc-by]
+
+[cc-by]: http://creativecommons.org/licenses/by/4.0/
+[cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
