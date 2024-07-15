@@ -6,7 +6,7 @@
 | ----------- | --------------------------------------------------- |
 | **Track**   | General                                             |
 | **When**    | July 12, 14:35 - 15:05                              |
-| **Where**   | Room 315, Tacoma Convention Center, Tacoma, WA, USA |
+| **Where**   | Room 316, Tacoma Convention Center, Tacoma, WA, USA |
 
 
 Read the [abstract][abstract] in [SciPy2024 schedule][schedule].
