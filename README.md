@@ -2,11 +2,12 @@
 
 [Santiago Soler][santisoler]
 
-| Information |                                                     |
-| ----------- | --------------------------------------------------- |
-| **Track**   | General                                             |
-| **When**    | July 12, 14:35 - 15:05                              |
-| **Where**   | Room 316, Tacoma Convention Center, Tacoma, WA, USA |
+| Information |                                                        |
+| ----------- | ------------------------------------------------------ |
+| **Track**   | General                                                |
+| **When**    | July 12, 14:35 - 15:05                                 |
+| **Where**   | Room 316, Tacoma Convention Center, Tacoma, WA, USA    |
+| **Slides**  | [Download PDF][slides-pdf], [Download ODP][slides-odp] |
 
 
 Read the [abstract][abstract] in [SciPy2024 schedule][schedule].
@@ -120,6 +121,8 @@ your custom downloaders or post-processors.
 [pycascades-pooch]: https://www.youtube.com/watch?v=KvxBc4xUMyg
 [abstract]: https://cfp.scipy.org/2024/talk/AWFAQF
 [schedule]: https://cfp.scipy.org/2024/schedule
+[slides-pdf]: https://github.com/santisoler/scipy2024-pooch/raw/main/slides/slides.pdf
+[slides-odp]: https://github.com/santisoler/scipy2024-pooch/raw/main/slides/slides.odp
 
 ## License
 
