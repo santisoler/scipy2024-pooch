@@ -2,12 +2,13 @@
 
 [Santiago Soler][santisoler]
 
-| Information |                                                        |
-| ----------- | ------------------------------------------------------ |
-| **Track**   | General                                                |
-| **When**    | July 12, 14:35 - 15:05                                 |
-| **Where**   | Room 316, Tacoma Convention Center, Tacoma, WA, USA    |
-| **Slides**  | [Download PDF][slides-pdf], [Download ODP][slides-odp] |
+| Information |                                                                                    |
+| ----------- | ---------------------------------------------------------------------------------- |
+| **Track**   | General                                                                            |
+| **When**    | July 12, 14:35 - 15:05                                                             |
+| **Where**   | Room 316, Tacoma Convention Center, Tacoma, WA, USA                                |
+| **Slides**  | [Download PDF][slides-pdf], [Download ODP][slides-odp]                             |
+| **DOI**     | [10.6084/m9.figshare.26312236.v1](https://doi.org/10.6084/m9.figshare.26312236.v1) |
 
 
 Read the [abstract][abstract] in [SciPy2024 schedule][schedule].
